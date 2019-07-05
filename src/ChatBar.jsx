@@ -11,12 +11,13 @@ class ChatBar extends Component {
       document.getElementById("username").value = "";
     }
   };
+
   render() {
     return (
-      <footer className="chatbar">
-        <input className="chatbar-username" id="username" placeholder="Your Name (Optional)" />                    
-        <input className="chatbar-message" onKeyDown={this._handleKeyDown} placeholder="Type a message and hit ENTER" />
-      </footer>  
+        <footer className="chatbar">
+          <input className="chatbar-username" id="username" placeholder="Your Name (Optional)" />                    
+          <input className="chatbar-message" onKeyDown={this._handleKeyDown} placeholder="Type a message and hit ENTER" />
+        </footer>  
     );
   }
 }
